@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgd"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"><![CDATA[
+    tools:context="com.asiet.miniproject.HomeScreen>
+    ]]>
+
+    <ImageView
+        android:id="@+id/mybookView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="150dp"
+        android:clickable="true"
+        android:onClick="MyBooks"
+        android:padding="10dp"
+        app:srcCompat="@drawable/mybook_view" />
+
+    <ImageView
+        android:id="@+id/profileView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="250dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="150dp"
+        android:clickable="true"
+        android:onClick="Profile"
+        android:padding="20dp"
+        app:srcCompat="@drawable/profile_view" />
+
+    <ImageView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="270dp"
+        android:clickable="true"
+        android:onClick="AdvSearch"
+        android:padding="20dp"
+        app:srcCompat="@drawable/search_view" />
+
+    <ImageView
+        android:id="@+id/cartView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="270dp"
+        android:clickable="true"
+        android:onClick="Cart"
+        android:padding="10dp"
+        app:srcCompat="@drawable/cart_view" />
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/searchText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorGoButton"
+        android:onClick="Search"
+        android:text="GO" />
+
+    <TextView
+        android:id="@+id/welcomeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchText"
+        android:layout_marginTop="42dp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_light"
+        android:onClick="Logout"
+        android:text="Logout" />
+
+</RelativeLayout>
